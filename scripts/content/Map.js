@@ -1,4 +1,4 @@
-import {view, ctx, clickPos} from "./main.js"
+import {view, ctx, clickPos} from "../main.js"
 
 function Block(x,y,size) {
 	ctx.fillStyle = "rgba(0,0,0,255)"
