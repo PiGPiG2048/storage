@@ -1,5 +1,5 @@
-import {view, ctx, clickPos} from "/main.js"
-import { paintButton } from "/ui/Components.js"
+import {view, ctx, clickPos} from "../main.js"
+import { paintButton } from "../ui/Components.js"
 
 export let menu = {
 	load: function(){
