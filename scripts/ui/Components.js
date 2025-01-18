@@ -1,4 +1,4 @@
-import {view, ctx, clickPos} from "./main.js"
+import {view, ctx, clickPos} from "../main.js"
 
 export function paintButton(x,y,w,h,color,onClick){
 	ctx.fillStyle = color
