@@ -1,7 +1,7 @@
 import {view, ctx, clickPos, loadScene} from "../main.js"
 import { paintButton } from "../ui/Components.js"
 import { menu } from "./menu.js"
-import {testmap} from "../Map.js"
+import {testmap} from "../content/Map.js"
 
 export let CL = {
 	load: function() {
