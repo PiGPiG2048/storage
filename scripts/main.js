@@ -17,7 +17,7 @@ export function clearScene() {
 	view.innerHTML = ""
 	ctx.clearRect(0, 0, view.width, view.height)
 }
-function loadScene(scene) {
+export function loadScene(scene) {
 	clearScene()
 	scene.load()
 }
