@@ -1,4 +1,4 @@
-//import {menu} from "./scenes/menu.js"
+import {menu} from "./scenes/menu.js"
 
 export const view = document.querySelector("#view")
 export const ctx = view.getContext("2d")
@@ -33,4 +33,4 @@ function main() {
 }
 
 console.log("hello world")
-//main()
+main()
