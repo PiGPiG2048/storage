@@ -30,7 +30,7 @@ function BanBlock(x,y,size) {
 
 function Map(blockPos,banBlockPos,mapSize,waves) {
 	let unit = 800 / mapSize
-	this.generate = function(){
+	this.load = function(){
 		for(let i = 0;i< blockPos.length;i++) {
 			if (blockPos[i][0] >= mapSize || blockPos[i][1] >= mapSize) continue
 			Block(blockPos[i][0] * unit,blockPos[i][1] * unit,unit)
@@ -42,3 +42,4 @@ function Map(blockPos,banBlockPos,mapSize,waves) {
 		}
 	}
 }
+export let testMap = new Map([[0,0], [0,1],[1,1],[1,2],[2,2]],[],4)
