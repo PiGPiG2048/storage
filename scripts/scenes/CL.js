@@ -1,7 +1,7 @@
 import {view, ctx, clickPos, loadScene} from "../main.js"
 import { paintButton } from "../ui/Components.js"
 import { menu } from "./menu.js"
-import {testmap} from "../content/Map.js"
+import {testMap} from "../content/Map.js"
 
 export let CL = {
 	load: function() {
@@ -9,7 +9,7 @@ export let CL = {
 			loadScene(menu)
 		})
 		paintButton(100,100,100,100,"rgba(255,255,255,255)",() => {
-			loadScene(testmap)
+			loadScene(testMap)
 		})
 	}
 }
