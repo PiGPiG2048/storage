@@ -29,7 +29,7 @@ function update() {
 }
 
 function main() {
-	loadSence(menu)
+	loadScene(menu)
 }
 
 console.log("hello world")
