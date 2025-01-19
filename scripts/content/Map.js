@@ -42,7 +42,7 @@ function Map(blockPos,banBlockPos,mapSize,waves) {
 		
 		for(let i = 0;i< this.banBlockPos.length;i++) {
 			if (this.banBlockPos[i][0] >= this.mapSize || this.banBlockPos[i][1] >= this.mapSize) continue
-			banBlock(this.banBlockPos[i][0] * unit,this.banBlockPos[i][1] * unit,unit)
+			BanBlock(this.banBlockPos[i][0] * unit,this.banBlockPos[i][1] * unit,unit)
 		}
 	}
 }
