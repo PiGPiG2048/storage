@@ -33,7 +33,7 @@ function Map(blockPos,banBlockPos,mapSize,waves) {
 	this.banBlockPos = banBlockPos
 	this.mapsize = mapsize
 	this.waves = waves
-	let unit = 800 / this.mapSize
+	let unit = 800 / this.mapsize
 	this.load = function(){
 		for(let i = 0;i< this.blockPos.length;i++) {
 			if (this.blockPos[i][0] >= this.mapSize || this.blockPos[i][1] >= this.mapSize) continue
