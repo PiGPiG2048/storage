@@ -29,17 +29,21 @@ function BanBlock(x,y,size) {
 }
 
 function Map(blockPos,banBlockPos,mapSize,waves) {
-	let unit = 800 / mapSize
+	this.blockPos = blockPos
+	this.banBlockPos = banBlockPos
+	this.mapsize = mapsize
+	this.waves = waves
+	let unit = 800 / this.mapSize
 	this.load = function(){
-		for(let i = 0;i< blockPos.length;i++) {
-			if (blockPos[i][0] >= mapSize || blockPos[i][1] >= mapSize) continue
-			Block(blockPos[i][0] * unit,blockPos[i][1] * unit,unit)
+		for(let i = 0;i< this.blockPos.length;i++) {
+			if (this.blockPos[i][0] >= this.mapSize || this.blockPos[i][1] >= this.mapSize) continue
+			Block(this.blockPos[i][0] * unit,this.blockPos[i][1] * unit,unit)
 		}
 		
-		for(let i = 0;i< banBlockPos.length;i++) {
-			if (banBlockPos[i][0] >= mapSize || banBlockPos[i][1] >= mapSize) continue
-			banBlock(banBlockPos[i][0] * unit,banBlockPos[i][1] * unit,unit)
+		for(let i = 0;i< this.banBlockPos.length;i++) {
+			if (this.banBlockPos[i][0] >= this.mapSize || this.banBlockPos[i][1] >= this.mapSize) continue
+			banBlock(this.banBlockPos[i][0] * unit,this.banBlockPos[i][1] * unit,unit)
 		}
 	}
 }
-export let testMap = Map([[0,0], [0,1],[1,1],[1,2],[2,2]],[],4)
+export let testMap = new Map([[0,0], [0,1],[1,1],[1,2],[2,2]],[],4)
