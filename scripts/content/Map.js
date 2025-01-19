@@ -42,4 +42,4 @@ function Map(blockPos,banBlockPos,mapSize,waves) {
 		}
 	}
 }
-export let testMap = new Map([[0,0], [0,1],[1,1],[1,2],[2,2]],[],4)
+export let testMap = Map([[0,0], [0,1],[1,1],[1,2],[2,2]],[],4)
